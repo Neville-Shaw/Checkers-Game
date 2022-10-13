@@ -172,16 +172,15 @@ function draw() {
   // One side wins if either there are no checkers of the opposing team or they cant make any valid moves
   if (BlackCheckerNUM == 0 || (canMove == false && turn == "B")) {
     console.log("White Wins!!");
-
     GameOverBox.style.display = "revert";
+    WinnerDisp.style.color = "#FFFFFF";
     WinnerDisp.innerHTML = "White Wins!";
-
     noLoop();
   };
   if (WhiteCheckerNUM == 0 || (canMove == false && turn == "W")) {
     console.log("Black Wins!!");
     WinnerDisp.innerHTML = "Black Wins!";
-
+    WinnerDisp.style.color = "#000000";
     GameOverBox.style.display = "revert";
     noLoop();
   };
@@ -478,16 +477,16 @@ function SetupBoard(board) {
   ];
 
   // Empty board used for testing purposes
-  // board = [
-  //   ["", "", "", "", "", "", "", ""],
-  //   ["", "", "B", "", "B", "", "", ""],
-  //   ["", "", "", "", "", "KW", "", ""],
-  //   ["", "", "", "", "", "", "W", ""],
-  //   ["", "", "", "", "", "KW", "", ""],
-  //   ["", "", "B", "", "B", "", "", ""],
-  //   ["", "", "", "", "", "", "", ""],
-  //   ["", "", "W", "", "W", "", "", ""],
-  // ];
+  board = [
+    ["", "", "", "", "", "", "", ""],
+    ["", "", "B", "", "B", "", "", ""],
+    ["", "", "", "", "", "KW", "", ""],
+    ["", "", "", "", "", "", "W", ""],
+    ["", "", "", "", "", "KW", "", ""],
+    ["", "", "B", "", "B", "", "", ""],
+    ["", "", "", "", "", "", "", ""],
+    ["", "", "W", "", "W", "", "", ""],
+  ];
   return board;
 };
 
