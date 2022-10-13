@@ -1,0 +1,135 @@
+.wrapper {
+  position: relative;
+  text-align: center;
+  margin: auto;
+
+  
+
+  
+  /* Show the borders of the div */
+  /*border: 1px solid red;*/
+}
+
+
+.table {
+  
+  position: absolute;
+  width: 800;
+  height: 800;
+
+  left: 50;
+  top: -50;
+
+  z-index: -100;
+
+  background-color: rgb(95, 49, 24);
+  /* border: 1px solid red; */
+
+  border-radius: 5px;
+}
+.Border {
+  
+  
+  width: 715;
+  height: 715;
+
+  margin-left: 42;
+  margin-top: 42;
+
+  z-index: -99;
+
+  background-color: rgb(117, 58, 29);
+  border-radius: 5px;
+  /* border: 1px solid red; */
+}
+.Canvas {
+  position: relative;
+
+  margin: auto;
+  margin-top: 10vh;
+  width: 900;
+
+  /* Show the borders of the div */
+  /*border: 1px solid rgb(0, 134, 40);*/
+}
+
+.textBox {
+  position: absolute;
+  
+  left: 100;
+
+  display: none;
+  
+  width: 40%;
+
+  /* border: 1px solid rgb(0, 134, 40); */
+}
+.Text {
+  color: rgb(0, 0, 0);
+  font-family: Arial  ;
+  font-style: italic;
+  font-size: 50px;
+
+  right: 25;
+  position: relative;
+  text-align: center;
+  bottom: 90;
+
+  display: outside;
+  /* display: none; */
+  
+  /* Show the borders of the div */
+  /*border: 1px solid rgb(68, 0, 255);*/
+}
+.PlayAgain {
+  color: rgb(0, 0, 0);
+  font-family: Arial  ;
+  font-style: italic;
+  font-size: 30px;
+
+  width: 250;
+  position: absolute;
+  text-align: center;
+  bottom: 135;
+
+  background-color: rgb(100, 50, 25);
+  left: 450;
+  display: outside;
+  /* display: none; */
+  border: none;
+  /* Show the borders of the div */
+  /*border: 1px solid rgb(68, 0, 255);*/
+
+
+  /* button stuff */
+  border-radius: 2px;
+  transition-duration: 0.3s;
+
+  border: none;
+  outline: none;
+  display: inline;
+}
+
+
+.PlayAgain:hover {
+  background-color: rgb(90, 45, 23);
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+
+  
+  cursor: hand;
+}
+
+.PlayAgain:active {
+  background-color: rgb(83, 42, 22);
+  color: rgb(0, 0, 0);
+  border-radius: 6px;
+  transition-duration: 0.1s;
+  cursor: hand;
+}
+
+
+
+body {
+  background-color: rgb(39, 39, 39);
+}
