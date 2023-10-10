@@ -4,7 +4,7 @@ var positions = [[], [], [], [], [], [], [], []];
 var sqSize;
 
 var turn = "W";
-var choosing = true; // if you are choosing a checker of not
+var choosing = true;
 
 // Also used in check rules function
 // Holds the chosen one
